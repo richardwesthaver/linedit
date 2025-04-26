@@ -61,7 +61,7 @@
 (defcommand "M-G")
 (defcommand "M-H" 'help)
 (defcommand "M-I" 'describe-word)
-(defcommand "M-J")
+(defcommand "M-J" 'inspect-word)
 (defcommand "M-K")
 (defcommand "M-L" 'downcase-word)
 (defcommand "M-M")

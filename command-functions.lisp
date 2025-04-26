@@ -356,6 +356,11 @@
                   (with-output-to-string (s)
                     (describe (read-from-string (editor-word editor)) s))))
 
+(defun inspect-word (chord editor)
+  (declare (ignore chord))
+  (without-backend editor
+    (inspect (read-from-string (editor-word editor)))))
+
 (defun toggle-insert (chord editor)
   (declare (ignore chord))
   (setf (editor-insert-mode editor) (not (editor-insert-mode editor))))
